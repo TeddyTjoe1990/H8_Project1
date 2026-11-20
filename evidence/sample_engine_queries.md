@@ -8,10 +8,10 @@ Baris maksimum yang diminta per pertanyaan: 1000. Seluruh baris yang dikembalika
 
 Analysis ID: analysis-b0f26c3d-ffcd-414a-bd5c-936e7f96b3c6
 Tabel yang digunakan: gold.order_360
-RBaris dikembalikan: 4
+Baris dikembalikan: 4
 Waktu eksekusi (ms): 39
 
-### Jawabanya
+### Jawabannya
 
 Pendapatan bersih diagregasikan pada tingkat order (order grain) berdasarkan saluran penjualan. Mengembalikan 4 baris.
 
@@ -59,7 +59,7 @@ Tabel yang digunakan: gold.customer_daily
 Baris dikembalikan: 90
 Waktu eksekusi (ms): 48
 
-### Jawabanya
+### Jawabannya
 
 Pelanggan aktif adalah pelanggan dengan setidaknya satu pesanan pada tanggal tersebut. Mengembalikan 90 baris.
 
@@ -193,7 +193,7 @@ Tabel yang digunakan: gold.product_daily
 Baris dikembalikan: 80
 Waktu eksekusi (ms): 37
 
-### Jawabanya
+### Jawabannya
 
 Unit produk dijumlahkan dari fakta produk-harian (product-day facts). Mengembalikan 80 baris.
 
@@ -317,7 +317,7 @@ Tabel yang digunakan: gold.channel_campaign_daily
 Baris dikembalikan: 10
 Waktu eksekusi (ms): 38
 
-### Jawabanya
+### Jawabannya
 
 ROAS (Return on Ad Spend) adalah pendapatan bersih teratribusi dibagi dengan pengeluaran kampanye; kampanye tanpa pengeluaran dikecualikan dari pemeringkatan. Mengembalikan 10 baris.
 
@@ -371,7 +371,7 @@ Tabel yang digunakan: gold.executive_kpis_daily
 Baris dikembalikan: 103
 Waktu eksekusi (ms): 37
 
-### Jawabanya
+### Jawabannya
 
 Tabel KPI eksekutif menyediakan metrik pendapatan bersih harian. Mengembalikan 103 baris.
 
@@ -495,7 +495,7 @@ SELECT metric_date, net_revenue FROM gold.executive_kpis_daily ORDER BY metric_d
 
 ### Peringatan dari mesin
 
-Tidak ada yang dikembalikan oleh API untuk kueri ini.
+Tidak ada yang dikembalikan oleh API untuk queri ini.
 
 ### Visualisasi yang dikembalikan oleh mesin
 ```json
@@ -512,6 +512,6 @@ Tidak ada yang dikembalikan oleh API untuk kueri ini.
 
 ## Batasan Interpretasi
 
-Peringatan kueri di atas adalah bidang respons API, terpisah dari pemeriksaan kualitas pipeline. Kueri yang berhasil tidak menghapus keterbukaan pipeline mengenai pesanan tanpa item yang diterima, cakupan inventaris yang tidak lengkap, atau perkiraan unit yang dikembalikan (refunded units).
+Peringatan queri di atas adalah bidang respons API, terpisah dari pemeriksaan kualitas pipeline. Queri yang berhasil tidak menghapus keterbukaan pipeline mengenai pesanan tanpa item yang diterima, cakupan inventaris yang tidak lengkap, atau perkiraan unit yang dikembalikan (refunded units).
 
-Berkut ini adalah file bukti eksekusi kueri. Or оркестраси Airflow didokumentasikan secara terpisah di airflow_run.png.
+Berkut ini adalah file bukti eksekusi queri. Airflow didokumentasikan secara terpisah di airflow_run.png.
